@@ -6,11 +6,12 @@ const initialState = {
   actionMenuItem: null,
 };
 
-const menuSlice = createSlice({
-  name: "menuSlice",
+export const menuSlice = createSlice({
+  name: "menu",
   initialState,
   reducers: {
     menuItemClick: (state, action) => {
+      console.log("---", action);
       state.actionMenuItem = action.payload;
     },
     actionItemClick: (state, action) => {

@@ -8,3 +8,5 @@ fontawsome react icons
 classnames
 
 when you are writing css in modules follow the sequence from top to write style otherwise it won't work
+
+never include Slice word in the name of redux toolkit slice

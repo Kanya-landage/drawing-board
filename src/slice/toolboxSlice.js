@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { MENU_ITEMS, COLORS } from "@/constants";
 
 const initialState = {
   [MENU_ITEMS.PENCIL]: {
@@ -14,8 +15,8 @@ const initialState = {
   [MENU_ITEMS.DOWNLOAD]: {},
 };
 
-const toolboxSlice = createSlice({
-  name: "toolboxSlice",
+export const toolboxSlice = createSlice({
+  name: "toolbox",
   initialState,
   reducers: {
     changeColor: (state, action) => {
