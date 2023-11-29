@@ -1,7 +1,7 @@
 .menuContainer {
-  @apply border rounded-md px-5 py-1 flex justify-between items-center w-72;
+  @apply absolute px-5 py-1 flex justify-between w-1/4 left-1/2 top-5 rounded-md;
   border: 1px solid theme("colors.border1");
-  margin: auto;
+  transform: translateX(-50%);
   box-shadow: theme("colors.shadow1");
   background-color: theme("colors.background1");
 

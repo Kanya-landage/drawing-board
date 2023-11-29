@@ -1,17 +1,29 @@
 .toolboxContainer {
   @apply px-3 py-1 flex-col w-auto border rounded-md absolute left-5 top-52 justify-center;
+  border: 1px solid theme("colors.border1");
+  box-shadow: theme("colors.shadow1");
+  background-color: theme("colors.background1");
 
   .toolItem {
     @apply mb-3;
+
     .toolText {
       @apply mb-1;
       font-size: 14px;
       color: theme("colors.text1");
     }
+
     .itemContainer {
       @apply flex;
+
       .colorBox {
         @apply h-5 w-5 mr-1 rounded-sm;
+
+        &:hover,
+        &.active {
+          border: 1.5px solid theme("colors.border2");
+          box-shadow: theme("colors.shadow2");
+        }
       }
     }
   }
