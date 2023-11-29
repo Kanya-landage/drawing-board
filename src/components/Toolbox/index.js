@@ -24,7 +24,10 @@ const Toolbox = () => {
     console.log(newColor);
     dispatch(changeColor({ item: activeMenuItem, color: newColor }));
   };
-  const updateBrushSize = () => {};
+  const updateBrushSize = (e) => {
+    console.log(e.target.value);
+    dispatch(changeBrushSize({ item: activeMenuItem, size: e.target.value }));
+  };
 
   return (
     <div className={styles.toolboxContainer}>
@@ -95,7 +98,8 @@ const Toolbox = () => {
               min={1}
               max={10}
               step={1}
-              onChange={updateBrushSize}
+              value={size}
+              onChange={(e) => updateBrushSize(e)}
             />
           </div>
         </div>

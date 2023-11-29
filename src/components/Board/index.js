@@ -7,8 +7,8 @@ import { actionItemClick } from "@/slice/menuSlice";
 const Board = () => {
   const dispatch = useDispatch();
   const canvasRef = useRef(null);
-  const drawHistory = useRef([]);
-  const historyPointer = useRef(0);
+  const drawHistory = useRef([]); // ref to store drawing data
+  const historyPointer = useRef(0); // what is drawn until now
   const shouldDraw = useRef(false);
   const { activeMenuItem, actionMenuItem } = useSelector((state) => state.menu);
   const { color, size } = useSelector((state) => state.toolbox[activeMenuItem]);
@@ -23,7 +23,7 @@ const Board = () => {
       const URL = canvas.toDataURL();
       const anchor = document.createElement("a");
       anchor.href = URL;
-      anchor.download = "sketch.jpg";
+      anchor.download = "sketch.png";
       anchor.click();
     } else if (
       actionMenuItem === MENU_ITEMS.UNDO ||
