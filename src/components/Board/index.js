@@ -52,17 +52,7 @@ const Board = () => {
       context.lineWidth = size;
     };
 
-    const handleChangeConfig = (config) => {
-      console.log("config", config);
-      changeConfig(config.color, config.size);
-    };
-    //called changeConfig for socket
     changeConfig(color, size);
-    // socket.on("changeConfig", handleChangeConfig);
-
-    return () => {
-      // socket.off("changeConfig", handleChangeConfig);
-    };
   }, [color, size]);
 
   // before browser pain
