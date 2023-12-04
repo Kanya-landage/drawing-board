@@ -4,6 +4,7 @@
   transform: translateX(-50%);
   box-shadow: theme("colors.shadow1");
   background-color: theme("colors.background1");
+  width: auto;
 
   .iconWrapper {
     @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
@@ -16,5 +17,19 @@
       color: theme("colors.text1");
       font-size: 20px;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menuContainer {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .iconWrapper {
+    @apply h-5 w-5;
+  }
+  .icon {
+    font-size: 14px !important;
   }
 }

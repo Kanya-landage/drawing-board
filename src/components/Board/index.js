@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { MENU_ITEMS } from "@/constants";
 import { actionItemClick } from "@/slice/menuSlice";
+import styles from "./index.module.css";
 
 const Board = () => {
   const dispatch = useDispatch();
@@ -116,7 +117,7 @@ const Board = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef}></canvas>;
+  return <canvas id="board" ref={canvasRef}></canvas>;
 };
 
 export default Board;

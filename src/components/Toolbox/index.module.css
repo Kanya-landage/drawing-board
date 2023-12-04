@@ -28,3 +28,31 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .toolboxContainer {
+    @apply absolute px-2 py-1 flex justify-end left-5 top-[34rem] rounded-md;
+  }
+  .toolText {
+    font-size: 12px !important;
+  }
+  .toolItem {
+    margin-bottom: 7px !important;
+  }
+  .colorBox {
+    height: 1.1rem !important;
+    width: 1.1rem !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .toolboxContainer {
+    @apply absolute px-2 py-1 flex justify-end left-5 top-[64rem] w-[12rem];
+  }
+  .toolText {
+    font-size: 14px !important;
+  }
+  .toolItem {
+    margin-top: 10px;
+  }
+}
