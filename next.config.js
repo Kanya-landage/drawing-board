@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// next.config.js
 
-module.exports = nextConfig
+module.exports = {
+  // New export configuration
+  output: {
+    // Set the path for the exported files (adjust as needed)
+    path: "/out",
+  },
+};
